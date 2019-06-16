@@ -2,7 +2,7 @@ const path = require('path');
 const dotenv = require('dotenv');
 const Telegraf = require('telegraf');
 const SocksAgent = require('socks5-https-client/lib/Agent');
-const spread = require('./spread');
+const decompose = require('./decompose');
 
 dotenv.config({path: path.join(__dirname, '../.env')});
 
@@ -31,7 +31,7 @@ bot.on('message', ctx => {
   if (isNaN(text) || Number(text) < 1 || !Number.isInteger(Number(text))){
     ctx.reply('Please send me natural number, or I won\'t be able to help =(');
   } else {
-    spread(Number(text))
+    decompose(Number(text))
       .then(res => ctx.reply(res))
       .catch(err => ctx.reply(err));
   }

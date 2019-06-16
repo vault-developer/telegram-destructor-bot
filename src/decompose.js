@@ -1,4 +1,4 @@
-const spread = num =>
+const decompose = num =>
   new Promise((mainResolve, mainReject) => {
     let timeout = null;
     let cancelled = false;
@@ -53,4 +53,4 @@ const spread = num =>
       .catch(() => mainReject('It\'s too difficult for me =('));
   });
 
-module.exports = spread;
+module.exports = decompose;
