@@ -11,6 +11,8 @@ const spread = num =>
     // init cancelable promise
     const findDelimeters = num => new Promise((res, rej) => {
       const delimeters = new Map();
+
+      delimeters.set(1, 1);
       let delimiter = 2;
 
       (function tryNextDelimeter() {
@@ -48,7 +50,7 @@ const spread = num =>
     // resolve promise
     findDelimeters(num)
       .then(res => mainResolve(stringifyMap(res)))
-      .catch(() => mainReject('Данная задачка мне не под силу =('));
+      .catch(() => mainReject('It\'s too difficult for me =('));
   });
 
 module.exports = spread;

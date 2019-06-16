@@ -25,11 +25,11 @@ const bot = new Telegraf(TELEGRAM_BOT_TOKEN, {
   telegram: {agent: socksAgent}
 });
 
-bot.start((ctx) => ctx.reply('Привет! Я робот-разлагатор. Напиши мне любое число, и я разложу его на простые множители.'));
+bot.start((ctx) => ctx.reply('Hello! I am a robot-decomposer. I can make factorization of your number.'));
 bot.on('message', ctx => {
   const {text} = ctx.message;
-  if (isNaN(text) || Number(text) < 2){
-    ctx.reply('Пожалуйста, введи число > 1, иначе я ничем не смогу помочь =(');
+  if (isNaN(text) || Number(text) < 1 || !Number.isInteger(Number(text))){
+    ctx.reply('Please send me natural number, or I won\'t be able to help =(');
   } else {
     spread(Number(text))
       .then(res => ctx.reply(res))
