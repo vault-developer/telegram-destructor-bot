@@ -1,0 +1,6 @@
+node_modules
+.idea
+.git
+Dockerfile
+npm-debug
+.env.example
