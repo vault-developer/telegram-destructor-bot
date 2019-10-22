@@ -7,7 +7,7 @@ const decompose = require('./decompose');
 dotenv.config({path: path.join(__dirname, '../.env')});
 
 const {
-  TELEGRAM_BOT_TOKEN,
+  TELEGRAM_RAZLAGATOR_BOT_TOKEN,
   TELEGRAM_PROXY_HOST,
   TELEGRAM_PROXY_PORT,
   TELEGRAM_PROXY_USERNAME,
@@ -21,7 +21,7 @@ const socksAgent = new SocksAgent({
   socksPassword: TELEGRAM_PROXY_PASSWORD
 });
 
-const bot = new Telegraf(TELEGRAM_BOT_TOKEN, {
+const bot = new Telegraf(TELEGRAM_RAZLAGATOR_BOT_TOKEN, {
   telegram: {agent: socksAgent}
 });
 

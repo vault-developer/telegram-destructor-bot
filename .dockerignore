@@ -3,4 +3,5 @@ node_modules
 .git
 Dockerfile
 npm-debug
+.env
 .env.example
