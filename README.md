@@ -2,6 +2,8 @@
 
 Telegram bot which can make factorization of number =)
 
+![alt screen](src/assets/screenshot.gif)
+
 ## Find in Telegram now
 You can find this bot in Telegram by name `@razlagator_bot` or can enter by [short link](https://tttttt.me/razlagator_bot).
 
