@@ -10,7 +10,8 @@ You can find this bot in Telegram by name `@razlagator_bot` or can enter by [sho
 1. Create `.env` file
 2. Register new Telegram bot in `@BotFather`
 3. Find Telegram proxy
-4. Add all config variable in `.env` file
+4. Add all config variables in `.env` file
+
     ```dotenv
     TELEGRAM_DESTRUCTOR_BOT_TOKEN=...
     TELEGRAM_PROXY_HOST=...
@@ -23,5 +24,4 @@ You can find this bot in Telegram by name `@razlagator_bot` or can enter by [sho
 - `npm start`
 
 ## License
-
 MIT © [vault-developer](https://github.com/vault-developer)
