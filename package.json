@@ -1,13 +1,20 @@
 {
-  "name": "bot-decomposer",
-  "main": "src/telegram-bot.js",
-  "scripts": {
-    "start": "node src/telegram-bot.js"
-  },
+  "name": "telegram-serverless-bot",
+  "main": "api/index.ts",
   "author": "Trott Albert",
   "license": "MIT",
+  "scripts": {
+    "start": "dotenv -- nodemon -e ts -x ts-node src/index.dev.ts"
+  },
   "dependencies": {
-    "dotenv": "^8.0.0",
-    "telegraf": "^3.38.0"
+    "telegraf": "3.38.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "1.8.5",
+    "debug": "4.3.1",
+    "dotenv-cli": "4.0.0",
+    "nodemon": "2.0.7",
+    "ts-node": "9.1.1",
+    "typescript": "4.1.3"
   }
 }

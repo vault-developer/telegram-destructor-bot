@@ -1,29 +1,21 @@
 # Factorization - Telegram bot
 
-Telegram bot which can make factorization of number =)
+Simple telegram bot which can make factorization of the number. <br>
+Deployed with vercel.com using serverless function.
 
 ![alt screen](src/assets/screenshot.gif)
 
-## Find in Telegram now
-You can find this bot in Telegram by name `@razlagator_bot` or can enter by [short link](https://tttttt.me/razlagator_bot).
-
 ## Before start
+1. Register new Telegram bot with `@BotFather`
+2. Create `.env` file
 
-1. Create `.env` file
-2. Register new Telegram bot in `@BotFather`
-3. Find Telegram proxy
-4. Add all config variables in `.env` file
+## Launch project locally
+- `yarn`
+- `yarn start`
 
-    ```dotenv
-    TELEGRAM_DESTRUCTOR_BOT_TOKEN=...
-    TELEGRAM_PROXY_HOST=...
-    TELEGRAM_PROXY_PORT=...
-    TELEGRAM_PROXY_USERNAME=...
-    TELEGRAM_PROXY_PASSWORD=...
-    ```
-## Launch project
-- `npm install`
-- `npm start`
+## Deploy project to vercel
+- [import](https://vercel.com/new) your repository
+- make push to origin/master
 
-## License
-MIT © [vault-developer](https://github.com/vault-developer)
+## Demo
+You can find this bot in Telegram by name `@razlagator_bot` or can enter by [short link](https://t.me/razlagator_bot).
