@@ -3,6 +3,13 @@
 Simple telegram bot which can make factorization of the number. <br>
 Deployed with vercel.com using serverless function.
 
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg) <br>
+![GitHub issues open](https://img.shields.io/github/issues/vault-developer/telegram-destructor-bot)
+![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/vault-developer/telegram-destructor-bot) <br>
+![GitHub pull requests open](https://img.shields.io/github/issues-pr-raw/vault-developer/telegram-destructor-bot)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/vault-developer/telegram-destructor-bot)
+
 ![alt screen](src/assets/screenshot.gif)
 
 ## Before start
@@ -18,4 +25,4 @@ Deployed with vercel.com using serverless function.
 - make push to origin/master
 
 ## Demo
-You can find this bot in Telegram by name `@razlagator_bot` or can enter by [short link](https://t.me/razlagator_bot).
+You can find this bot in Telegram by name `@razlagator_bot` or just click [here](https://t.me/razlagator_bot).
